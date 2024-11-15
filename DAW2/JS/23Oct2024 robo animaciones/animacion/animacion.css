@@ -1,0 +1,40 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color:black ;
+    color: white;
+    font-size: 5rem;
+}
+@keyframes animar {
+    0%{
+        opacity: 0;
+        scale: 0;
+        transform: rotate(-180deg) translate(-100%) translateX(-100%);
+    }
+    100% {
+        opacity: 1;
+        scale: 100%;
+        transform: rotate(0deg) translate(0%) translateX(50%);
+    }
+}
+img {
+    transform-origin: 0 0 ;
+    width: 1000px;
+    height: auto;
+    /*Nombre de la variable de la animacino*/
+    view-timeline-name: --efecto;
+    /*el eje sera en vertical*/
+    view-timeline-axis: block;
+    /*nombre de la animacion a ustilizar, asociar la animacion a la linea del tiempo*/
+    animation-timeline: --efecto;
+
+    animation-name: animar;
+    /*se inicia la animacion cunado llegue al 10% y se terminará cuando llegue al 50%*/
+    animation-range:entry 15% cover 50% ;
+
+    /*La animacion se hará igual al entrar y al salir*/
+    animation-fill-mode: both ;
+}

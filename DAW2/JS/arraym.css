@@ -1,0 +1,30 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border-radius: 10px;
+    overflow: hidden;
+}
+.container{
+    padding: 20px;
+    width: fit-content;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    background-color: aqua;
+    gap: 10px;
+    flex-wrap: wrap;
+
+    .card {
+        width: 150px;
+        padding: 10px;
+        border: solid 2px;
+        background-color: orange;
+        box-shadow: 0 0 10px black;
+        display: flex;
+        flex-direction: column;  
+
+    }
+}
+
+

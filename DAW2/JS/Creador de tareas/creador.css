@@ -1,0 +1,20 @@
+li{
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    border: solid 1px;
+    background-color: rgb(131, 7, 48);
+    color: white;
+    padding: 1%;
+    
+}
+.estilo{
+    background-color: green;
+    text-decoration:line-through;
+}
+.adios {
+    display: none;
+}
+.ver {
+    display: block;
+}

@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Generador de Curriculums</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+
+        }
+        ul,li {
+            list-style: none;
+        }
+        body {
+            font-size: 15px;
+            font-family: "system-ui";
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+
+        }
+        img {
+            border-radius: 50%;
+            border: solid 10px wheat;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+        }
+        .container{
+            max-width: 1024px;
+            margin: auto;
+            border: solid 4px salmon;
+            padding: 50px;
+        }
+        .container>div {
+            margin: 10px 0;
+        }
+        .container>div::after {
+            content: "";
+            display: block;
+            width: 100%;
+            height: 2px;
+            background-color: turquoise;
+        }
+    </style>
+</head>
+<body>
+    <!-- <div class="container">
+        <h1>Bienvenido a mi curriculum</h1>
+        <div id="perfil">
+            <img src="http://picsum.photos/80" alt="">
+        </div>
+        <div class="datosPer">
+            <ul>
+                <li>JOJO Joestar</li>
+                <li>123456789</li>
+                <li>JOOJO@gm.com</li>
+            </ul>
+        </div>
+        <div class="comocimineots">
+            <ul>
+                <li>html</li>
+                <li>Css</li>
+                <li>JS</li>
+                <li>Java</li>
+            </ul>
+        </div>
+    </div> -->
+    <script>
+       let perfin =  prompt("URL de tu foto");
+       perfin = perfin == null? "http://picsum.photos/80": perfin;
+
+       let nom = prompt("Nombre");
+       let tlf = prompt("telefono");
+       let gm = prompt("gmail");
+       
+       let cono = prompt("Conocimiento separados por espacio").split(" ");
+       
+       
+       document.write(`
+        <div class="container">
+        <h1>Bienvenido a mi curriculum</h1>
+        <div id="perfil">
+            <img src="${perfin}" alt="">
+        </div>
+        <div class="datosPer">
+            <ul>
+                <li>${nom}</li>
+                <li>${tlf}</li>
+                <li>${gm}</li>
+            </ul>
+        </div>
+        <div class="comocimineots">
+            <ul>`);
+                cono.forEach(element => {
+                    document.write(`<li>${element}</li>`);
+                }); 
+            document.write(`</ul>
+        </div>
+    </div>
+       `);
+    </script>
+</body>
+</html>

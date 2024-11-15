@@ -1,0 +1,31 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-size: 15px;
+    font-family: "system-ui";
+}
+
+header {
+    padding: 50px;
+    box-shadow: 0 0  10px rgba(0, 0, 0, 0.2);
+
+    div.brand {
+        h1 {
+            font-size: 2rem;
+        }
+    }
+    div.menu {
+        button {
+            font-size: 2rem;
+            background-color: transparent;
+            border: none;
+        }
+    }
+    nav {
+        display: flex;
+
+    }
+}

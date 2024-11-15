@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+		<style>
+			* {
+				margin: 0;
+				padding: 0;
+				box-sizing: border-box;
+			}
+			.container {
+				max-width: 70%;
+				margin: auto;
+				text-align: center;
+			}
+			.botones,
+			.pantallas {
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				gap: 20px;
+				flex-flow: wrap;
+				padding: 50px;
+				margin: 50px 0;
+                div {
+                    padding: 40px;
+                    border: solid 1px;
+                    flex: 1;
+                }
+			}
+
+			.botones {
+				background-color: rgb(148, 190, 225);
+				a {
+					text-decoration: none;
+					color: white;
+					background-color: crimson;
+					min-width: 400px;
+					padding: 10px 20px;
+					&:hover {
+						background-color: blueviolet;
+					}
+				}
+			}
+		</style>
+	</head>
+	<body>
+		<!-- .botones>a{Boton$}*13+(.pantallas>div*3>(h2{Pantalla $}+img[src='https://picsum.photos/200'])) -->
+		<div class="container">
+			<div class="botones">
+				<a href="">Cambiar color de fondo</a>
+				<a href="">Cambiar una pantalla</a>
+				<a href="">Cambiar el tamaño del mensaje a todas</a>
+				<a href="">Cambiar la imagen a todas las pantallas</a>
+				<a href="">cambiar el borde de todas</a>
+                <a href="">Cambiar el borde a una pantalla</a>
+                <a href="">boton7</a
+				><a href="">Boton8</a>
+                <a href="">Boton9</a>
+                <a href="">Boton10</a
+				><a href="">Boton11</a>
+                <a href="">Boton12</a>
+                <a href="">Boton13</a>
+			</div>
+			<div class="pantallas">
+				<div>
+					<h2>Pantalla 1</h2>
+					<img src="https://picsum.photos/200" alt="" />
+				</div>
+				<div>
+					<h2>Pantalla 2</h2>
+					<img src="https://picsum.photos/200" alt="" />
+				</div>
+				<div>
+					<h2>Pantalla 3</h2>
+					<img src="https://picsum.photos/200" alt="" />
+				</div>
+			</div>
+		</div>
+        <script>
+            const botones = document.querySelectorAll(".botones a");
+            console.log(botones);
+
+            
+            
+
+        //     //las 3 pantallas
+        //     const pantallas = document.querySelectorAll(".pantallas > div")
+        //     //boton 1
+        //     document.addEventListener("DOMContentLoaded", ()=>{
+        //         const btn1 = document.querySelector(".botones a:first-child");
+        //         btn1.addEventListener("click", (e) =>{
+        //             pantallas.forEach(element => {
+        //                 e.preventDefault();
+        //                 element.style.backgroundColor = "salmon";
+        //             });
+        //         });
+        //     });
+        //     //boton 2
+        //     const btn2 = document.querySelector(".botones a:nth-child(2)");
+            
+        //     btn2.addEventListener("click",(evt)=>{
+        //         evt.preventDefault();
+        //         pantallas[1].style.backgroundColor ="green";
+        //     });
+        //    //boton 3
+        //     const btn3 = document.querySelector(".botones a:nth-child(3)");
+        //     btn3.addEventListener("click", (e)=>{
+        //         e.preventDefault();
+        //         pantallas.forEach(element => {
+        //             element.style.cssText = "font-size:40px;";
+        //         });
+        //     });
+        //     //boton 4
+        //     const btn4 = document.querySelectorAll(".botones a:nth-child(2)");
+        //     const imgs = document.querySelectorAll(".pantallas img");
+        //     btn4.addEventListener("click", (e)=>{
+        //         e.preventDefault();
+        //         imgs.forEach(element => {
+        //             element.src ="https://picsum.photos/200";
+        //         });
+
+        //     });
+        </script>
+	</body>
+</html>

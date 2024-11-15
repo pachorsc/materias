@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="arraym.css">
+</head>
+
+<body> 
+        <script>
+            document.write(`<div class="container">`);
+            let datos = [
+                { nombre: "Miguel", email: "migue@gmail.com", foto: "https://randomuser.me/api/portraits/women/60.jpg" },
+                { nombre: "Joja", email: "JOJA@gmail.com", foto: "https://randomuser.me/api/portraits/women/51.jpg" },
+                { nombre: "Gua", email: "GUA@gmail.com", foto: "https://randomuser.me/api/portraits/women/5.jpg" },
+                { nombre: "Yaui", email: "YAUi@gmail.com", foto: "https://randomuser.me/api/portraits/women/59.jpg" },
+                { nombre: "abb", email: "abb@gmail.com", foto: "https://randomuser.me/api/portraits/women/69.jpg" },
+                { nombre: "Seba", email: "SEBA@gmail.com", foto: "https://randomuser.me/api/portraits/women/9.jpg" }
+            ];
+            
+            datos.forEach(element => {
+                document.write(`
+                    <div class="card">
+                        <img src="${element.foto}" alt="">
+                        <h2>${element.nombre}</h2>
+                        <h3>${element.email}</h3>
+                    </div>
+                `);
+            });
+            document.write(`</div>`);
+        </script>   
+    
+</body>
+
+</html>

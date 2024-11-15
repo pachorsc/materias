@@ -1,0 +1,62 @@
+body {
+    overflow-x: hidden;
+}
+.card-header img {
+    max-width: 100%;
+     /*Nombre de la variable de la animacino*/
+     view-timeline-name: --efecto;
+     /*el eje sera en vertical*/
+     view-timeline-axis: block;
+     /*nombre de la animacion a ustilizar, asociar la animacion a la linea del tiempo*/
+     animation-timeline: --efecto;
+ 
+     animation-name: agrandar;
+     /*se inicia la animacion cunado llegue al 10% y se terminará cuando llegue al 50%*/
+     animation-range:entry 10% cover 50% ;
+ 
+     /*La animacion se hará igual al entrar y al salir*/
+     animation-fill-mode: both ;
+}
+@keyframes agrandar {
+    0% {
+        opacity: 0;
+        transform: scale(0.1);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+
+}
+
+#barra {
+    width: 0px;
+    height: 20px;
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    background-color: yellow;
+
+    /*Nombre de la variable de la animacino*/
+    view-timeline-name: --barralat;
+    /*el eje sera en vertical*/
+    view-timeline-axis: block;
+    /*nombre de la animacion a ustilizar, asociar la animacion a la linea del tiempo*/
+    animation-timeline: --barralat;
+    animation-name: barra ;
+    /*La animacion se hará igual al entrar y al salir*/
+    animation-range: entry 4800% cover 100%
+    
+}
+
+@keyframes barra {
+    0% {
+        width: 0px;
+        
+    }
+    100% {
+        width: 105%  ;
+    }
+
+}

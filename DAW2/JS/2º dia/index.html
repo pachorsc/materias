@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <script>
+        let ed = prompt("tu edad");
+        let text = "";
+        
+        text = ed>17? "Eres mayor": ed<17 ? "Eres menor"  :"escribiste otra cosa";
+
+        document.write(`<h1> ${text} </h1>`); 
+
+        //EJ2
+        let coche = {
+            modelo:"fita",
+            matricula: "123qwe",
+            numAcientos: 3,
+            tipoMotor: "espacial"
+        }
+        console.log(coche.matricula);
+
+        //ej3
+        let notas = [1,2,3,4,5,6,7];
+        console.log(`nota 1:  ${notas[0]}  nota 7: ${notas[6]} `);
+
+        //ej4 
+        let estudiantes = {
+            notasE : [1,2,3,4,5,6,7,8],
+        }
+        
+        console.log(`nota 3:  ${estudiantes.notasE[2]}  nota 4: ${estudiantes.notasE[3]} `);
+
+        estudiantes.email = "";
+
+        //ej5
+        let nombre = "Jihu";
+        let edad = 4;
+
+        console.log(`El Usuario ${nombre} tiene ${edad} años`);
+
+        //ej6
+        Textos = "cualquiera";
+        
+        console.log(Textos.toUpperCase());
+
+        //ej7
+        let flag = false;
+        let imp= "";
+        imp = flag? flag: "flag no era verdadera";
+        console.log(imp);
+
+        //ej8
+        let NomUsu = "nose";
+        let edadU = 145;
+
+        text = ed>17? `El usuario ${NomUsu} es mayor de edad`: `El usuario ${NomUsu} es menor de edad`;
+        console.log(text);
+
+        //ej9
+        let name = "JOseeee";
+        let edadnam = 15;
+        let carnet = true;
+        
+        text = edadnam<18? `El usuario ${name} no puede conducir`: carnet?  `El usuario ${name} puede conducir` : `El usuario ${name} no puede conducir`;
+        console.log(text);
+        
+        //ej 10
+        let usuario = {
+            nombre:"JOJO",
+            edad:19,
+            carnet: true
+        }
+        text = usuario.edad<18? `El usuario ${usuario.nombre} no puede conducir`: usuario.carnet?  `El usuario ${usuario.nombre} puede conducir` : `El usuario ${usuario.nombre} no puede conducir`;
+        console.log(text);
+
+        //ej11
+        let examen = 10;
+        let apto = examen<5 ?"no apto": "apto";
+
+        //ej12
+        
+    </script>
+    <style>
+        h1{
+            color: red;
+            font-size: 100px;
+        }
+    </style>
+</body>
+</html>
