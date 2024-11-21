@@ -1,0 +1,30 @@
+#ej4 {
+    border: none;
+    border-collapse: collapse;
+    border-top: solid 2px black;
+    border-bottom: solid 2px black;
+}
+#ej4 tr td{
+    padding: 0;
+    padding-left: 4px;
+    gap: 0;
+}
+
+td {
+    width: 100px;
+}
+.verd {
+    background-color: green;
+    color: wheat;
+    font-weight: bolder;
+}
+.ni {
+    background-color: orange;
+    border-bottom: 2px solid black;
+    color: wheat;
+    font-weight: bolder;
+}
+tr:nth-child(even){
+    background-color: #ddd;
+}
+

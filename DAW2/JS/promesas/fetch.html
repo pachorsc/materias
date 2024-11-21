@@ -26,30 +26,31 @@
         .then(response => response.json())
         .then(json => {
             
-
-            json.page.items.forEach(element => {
-            zon.innerHTML += `
+            let str="";
+            json.page.items.forEach((element,id )=> {
+            str += `
             <div class="col-md-4">
                 <!-- inicio col md -->
                 <div class="card text-white bg-primary mb-3">
                     <div class="card-header"><img src="${element.image}" alt="" class="img-fluid"></div>
                     <div class="card-body">
                       <h4 class="card-title">${element.title}</h4>
-                      <a href="detalles.html?id" class="btn btn-danger my-4">Más detalles</a>
+                      <a href="detalles.html?id=${element.id}" class="btn btn-danger my-4">Más detalles</a>
                     </div>
                 </div>
                 <!-- fin col md -->
             </div>`;
-                
             });
-        carg.style.display = "none";
+
+            carg.style.display = "none";
+            zon.innerHTML = str;
         });
         
 
     </script>
     <style>
         .card {
-            height: 500px;
+            height: 550px;
         }
         .cargando {
             position: absolute;

@@ -1,0 +1,38 @@
+
+body {    
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    padding: 40px;    
+    text-align: center;
+}
+form {
+    border: 1px solid black;
+    border-radius: 20px;
+    min-width: 600px;
+    text-align: center;
+    width: fit-content;    
+}
+table {
+    border: 1px solid black;
+    border-collapse: collapse;
+    border-radius: 20%;
+    min-width: 600px;
+    margin: 20px;
+}
+table td{
+    border: 1px solid black;
+    border-radius: 20px;
+}
+p {
+    font-size: 40px;
+}
+#nino{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#nino input {
+    margin: 5px;
+    
+}
