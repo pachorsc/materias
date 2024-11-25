@@ -1,12 +1,13 @@
 <?php
+//require_once
     class animal {
-        public $nombre;
-        public $color;
-        public $fech;
+        private $nombre;
+        private $color;
+        private $fech;
 
         public function __construct($nm, $cl, $fch) {
             $this->nombre = $nm;
-            $this ->color = $cl;
+            $this->color = $cl;
             $this-> fech = $fch;  
         }
 
